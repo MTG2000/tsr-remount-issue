@@ -56,12 +56,12 @@ function PostDeepComponent() {
       onClick={() =>
         navigate({
           search: {
-            someId: 'hello',
+            someId: Math.random().toString(),
           },
         })
       }
     >
-      hello
+      Update Search Params
     </button>
     </div>
   )
