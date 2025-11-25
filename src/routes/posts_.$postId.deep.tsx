@@ -58,7 +58,7 @@ function PostDeepComponent() {
       <h4 className="text-xl font-bold underline">{post.title}</h4>
       <div className="text-sm">{post.body}</div>
       <button
-        className="px-2 py-1 bg-blue-500 text-white rounded"
+        className="px-2 py-1 bg-blue-500 active:bg-blue-700 text-white rounded"
         onClick={() =>
           navigate({
             search: prev => ({
@@ -71,7 +71,7 @@ function PostDeepComponent() {
         Update Search Params 1
       </button>
       <button
-        className="px-2 py-1 bg-green-500 text-white rounded"
+        className="px-2 py-1 bg-green-500 active:bg-green-700 text-white rounded"
         onClick={() =>
           navigate({
             search: prev => ({
@@ -84,7 +84,7 @@ function PostDeepComponent() {
         Update Search Params 2
       </button>
       <button
-        className="px-2 py-1 bg-gray-500 text-white rounded"
+        className="px-2 py-1 bg-gray-500 active:bg-gray-700 text-white rounded"
         onClick={() => navigate({
           search: {},
         })}
